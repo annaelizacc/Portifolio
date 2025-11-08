@@ -177,6 +177,13 @@ header {
     padding: 5%;
 }
 
+#quad4:hover {
+    transform: scale(1.3);
+    height: 90%;
+    width: 80%;
+    margin-top: 3%;
+}
+
 .caixa {
     width: 90px;
     height: 5px;

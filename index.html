@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Eliza - Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="parte1">
+        <div>
+            <img src="imagens/botao-de-menu.png" alt="" height="45%" id="tracinho">
+            <input type="checkbox" id="menu">
+
+
+            <nav id="menu-content">
+                <ul class="menu-ul">
+                    <li><a href="#pag1">Home</a></li>
+                    <li><a href="#pag3">Habilidades</a></li>
+                    <li><a href="#pag2">Sobre Mim</a></li>
+                    <li><a href="#pag4">Projetos</a></li>
+                    <li><a href="#pag5">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="#pag2">
+            <h2 class="txt1">Sobre </h2>
+        </a>
+        <a href="#pag3">
+            <h2 class="txt1">Habilidades</h2>
+        </a>
+        <a href="#pag4">
+            <h2 class="txt1"> Projeto</h2>
+        </a>
+        <a href="#pag5">
+            <h2 class="txt1"> Contato</h2>
+        </a>
+
+
+        <label class="switch"> <!-- somente como se fosse uma div e colocasse uma classe para  -->
+            <input type="checkbox" id="color_mode"> <!-- so deu o tipo  -->
+            <span class="slider round "></span> <!-- Controles deslizantes arredondados  -->
+        </label>
+    </header>
+    <div id="pag1">
+
+        <div id="sla">
+            <div id="partesquerda">
+                <div id="nome">
+                    <p data-js="typing" id="nomeTexto">Anna Eliza</p>
+                </div>
+
+                <h2 id="partebaixo">
+                    <p data-js="typing" id="cargoTexto">Desenvolvedora</p>
+                </h2>
+
+                <div>
+                    <img src="imagens/css-3.png" alt="" height="80vh" width="80px">
+                    <img src="imagens/html.png" alt="" height="80vh" width="80px">
+                    <img src="imagens/js.png" alt="" height="80vh" width="80px">
+                    <img src="imagens/do-sustenido.png" alt="" height="80vh" width="80px">
+                    <img src="imagens/figma.png" alt="" height="80vh" width="80px">
+                    <img src="imagens/mysql (1).png" alt="" height="80vh" width="80px">
+                    <div class="linha"></div>
+                </div>
+
+                <div>
+                    <button onclick="abrirModal()" id="button">Currículo</button>
+                    <dialog id="modal">
+                        <img src="imagens/Curriculo2.png" alt="" height="auto">
+                        <button id="dialog-baixar"><a href="imagens/Currículo - Anna Eliza.pdf"  id="CV" download="Currículo - Anna Eliza">Baixar</a></button>
+                        <button onclick="fechar()" id="dialog-concluir">Concluído</button>
+                    </dialog>
+                </div>
+
+
+                <!-- <div>
+                    <button id="button" onclick="abrirModal()">Currículo</button>
+                    <dialog id="modal">
+                        <a href="imagens/Currículo - Anna Eliza.pdf" download="Currículo"></a>
+                        <img src="imagens/Currículo - Anna Eliza.pdf" alt="">
+                        <button id="dialog-baixar">Baixar</button>
+                        <button onclick="fechar()" id="dialog-concluir">Concluído</button>
+
+                        <a href="imagens/Currículo - Anna Eliza.pdf" id="CV" download="Currículo - Anna Eliza">Baixar</a>
+                    </dialog>
+                </div> -->
+
+            </div>
+            <div id="partdireita">
+                <a href="https://github.com/annaelizacc" class="git"> <img src="imagens/logotipo.png" alt=""
+                        height="100vh" width="100vh"> </a> <br>
+                <a
+                    href="https://www.linkedin.com/in/anna-eliza-cardoso-campos-030231363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                    <img src="imagens/social.png" alt="" height="100vh" width="100vh"> </a> <br>
+
+                <a href="mailto:annaelizacardosocampos@gmail.com"> <img src="imagens/o-email.png" alt="" height="100vh"
+                        width="100vh"> </a>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    <div id="pag2" class="reveal">
+        <h2 class="title">Sobre mim</h2>
+        <div id="quad2">
+            <img src="imagens/ISE_4517.jpeg" alt="" id="sobre">
+            <p id="sobree">Olá ! Eu sou a Anna Eliza, estudo no
+                Colégio COTEMIG. Programação é uma área de diversas
+                qualidades mas a que eu mais amo é em como ela pode
+                ir abrindo portas, eu mesmo amo cozinhar e ver Formula 1
+                mas transformar isso em algo maior juntando a programação
+                que é outra coisa que eu amo melhora tudo. Com a programação
+                eu tenho aprendi cada vez mais a me desenvolver não são
+                somente linhas de códigos. A leitura também era algo que
+                já fazia parte do meu cotidiano e agora está fazendo mais
+                ainda, na minha mente a leitura é como se fosse um filme
+                na minha cabeça cada momento é decisivo e especial.</p>
+        </div>
+
+    </div>
+
+    <div id="pag3" class="reveal">
+        <h2 class="titleH">Habilidades</h2>
+        <div id="quad3"> <!--id="quad3" -->
+            <div id="quad4">
+                <img src="imagens/ChatGPT Image Oct 29, 2025, 10_27_39 PM.png" alt="" height="80vh" width="80px"> <br>
+                HTML
+                <br>
+                <br>
+                <div class="caixa">
+                    <label id="bolinha"></label>
+                </div>
+            </div>
+            <div id="quad4">
+                <img src="imagens/css3-alt-brands-solid-full.svg" alt="" height="80vh" width="80px"> <br>
+                CSS
+                <br>
+                <br>
+                <div class="caixa">
+                    <label id="bolinha"></label>
+                </div>
+            </div>
+
+            <div id="quad4">
+                <img src="imagens/icons8-c-afiado-logotipo (1).svg" alt="" height="80vh" width="80px"> <br>
+                C#
+                <br>
+                <br>
+                <div class="caixa">
+                    <label id="bolinha"></label>
+                </div>
+            </div>
+
+            <div id="quad4">
+                <img src="imagens/js-brands-solid-full.svg" alt="" height="80vh" width="80px"> <br>
+                Java Script
+                <br>
+                <br>
+                <div class="caixa">
+                    <label id="bolinha"></label>
+                </div>
+
+            </div>
+
+            <div id="quad4">
+                <img src="imagens/icons8-mysql-48.png" alt="" height="80vh" width="80px"> <br>
+                MySql
+                <br>
+                <br>
+                <div class="caixa">
+                    <label id="bolinha"></label>
+                </div>
+
+            </div>
+
+            <div id="quad4">
+                <img src="imagens/figma (2).png" alt="" height="80vh" width="80px"> <br>
+                Figma
+                <br>
+                <br>
+                <div class="caixa">
+                    <label id="bolinha"></label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="pag4" class="reveal">
+        <h2 class="title2">Projetos</h2>
+        <div>
+            <div class="card">
+                <div class="img">
+                    <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
+                </div>
+
+                <div class="text">
+                    <p class="h3"> Belara - Replica </p>
+                    <p class="p"> Descrição do projeto </p>
+
+                    <div class="icon-box">
+                        <img src="/imagens/github-preto.png" alt="">
+                        <a href="https://annaelizacc.github.io/Copia/" class="span" target="_blank">Link do
+                            repositorio</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- -->
+            <div class="card">
+                <div class="img">
+                    <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
+                </div>
+
+                <div class="text">
+                    <p class="h3">Tullen - Replica </p>
+                    <p class="p"> 6 Video - 40 min </p>
+
+                    <div class="icon-box">
+                        <img src="/imagens/github-preto.png" alt="">
+                        <a href="https://annaelizacc.github.io/TULEN_COPIA/" class="span" target="_blank">Link do
+                            repositorio</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <div class="card">
+                <div class="img">
+                    <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
+                </div>
+
+                <div class="text">
+                    <p class="h3"> BITMAP - Replica </p>
+                    <p class="p"> 6 Video - 40 min </p>
+
+                    <div class="icon-box">
+                        <img src="/imagens/github-preto.png" alt="">
+                        <a href="https://annaelizacc.github.io/BITMAP-COPIA" class="span" target="_blank">Link do
+                            repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+
+            
+            <div class="card">
+                <div class="img">
+                    <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
+                </div>
+
+                <div class="text">
+                    <p class="h3"> Livraria Espanha/ E-commerce </p>
+                    <p class="p"> Descrição do projeto </p>
+
+                    <div class="icon-box">
+                        <img src="/imagens/github-preto.png" alt="">
+
+                        <a href="https://annaelizacc.github.io/E-commerce" class="span" target="_blank">Link do
+                            repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -->
+            <!--  -->
+
+            
+            <div class="card">
+                <div class="img">
+                    <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
+                </div>
+
+                <div class="text">
+                    <p class="h3">Tabela </p>
+                    <p class="p"> Descrição do projeto </p>
+
+                    <div class="icon-box">
+                        <img src="/imagens/github-preto.png" alt="">
+                        <a href="https://annaelizacc.github.io/Tabela/" class="span" target="_blank">Link do
+                            repositorio</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -->
+            
+            <div class="card">
+                <div class="img">
+                    <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
+                </div>
+
+                <div class="text">
+                    <p class="h3"> Tabela Periódica </p>
+                    <p class="p">É uma réplica da tabela periódica em formato de site. </p>
+
+                    <div class="icon-box">
+                        <img src="/imagens/github-preto.png" alt="">
+
+                        <a href="https://annaelizacc.github.io/Tabela_Periodica/" class="span" target="_blank">Link do
+                            repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -->
+
+
+        </div>
+
+    </div>
+    </div>
+
+    <!--  -->
+
+
+
+    <div id="pag5" class="reveal">
+        <h2 class="title3">Contato</h2>
+        <div id="quadradao" id="contato">
+            <div class="contato">
+                <button class="email">
+                    <a href=""> <img src="imagens/e-mail.png" alt="" height="30vh" width="30vw"></a>
+                    <p>annaelizacardosocampos@gmail.com</p>
+                </button>
+                <button class="email">
+                    <a href="https://github.com/annaelizacc"><img src="imagens/github (2).png" alt="" height="30vh"
+                            width="30vw"></a>
+                    <p>github.com/annaelizacc</p>
+                </button>
+                <button class="email">
+                    <a
+                        href="https://www.linkedin.com/in/anna-eliza-cardoso-campos-030231363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                        <img src="imagens/linkedin.png" alt="" height="30vh" width="30vw"> </a>
+                    <p>linkedin.com/in/annaelizacc</p>
+                </button>
+
+                 <button class="email">
+                    <a>
+                        <img src="imagens/telefone.png" alt="" height="30vh" width="30vw"> </a>
+                    <p>(31) 98244-0401</p>
+                </button>
+            </div>
+
+            <div>
+                <form action="https://api.staticforms.xyz/submit" method="post" id="forms">
+                    <input type="email" id="emailInput" class="email2" placeholder="Digite seu email" required>
+                    <textarea id="mensagemInput" class="mensagem" placeholder="Mensagem..." required></textarea>
+                    <button type="submit" class="button">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="sf_ac57eck89cndc3aa6ihi04i3">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-content">
+            <h2 class="footer-name">Anna Eliza</h2>
+            <div class="footer-icons">
+                <a href="https://github.com/annaelizacc" target="_blank" class="icon-hover">
+                    <img src="imagens/logotipo.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/anna-eliza-cardoso-campos-030231363" target="_blank"
+                    class="icon-hover">
+                    <img src="imagens/social.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:annaelizacardosocampos@gmail.com" class="icon-hover">
+                    <img src="imagens/o-email.png" alt="Email">
+                </a>
+            </div>
+            <p class="copy">© 2025 — Desenvolvido por Anna Eliza ✨</p>
+        </div>
+    </footer>
+
+
+    </div>
+    </footer>
+
+
+</body>
+
+</html>

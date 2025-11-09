@@ -1131,7 +1131,7 @@ input:checked+.slider:before {
     }
 
     .mensagem{
-         margin-left: 0%;
+        margin-right: 12%;
     }
 
     .contato {
@@ -1166,6 +1166,11 @@ input:checked+.slider:before {
     #partdireita>a>img {
         width: 40px;
         height: 40px;
+    }
+
+    dialog{
+        width: 80vw;
+        height: 60vh;
     }
 
 

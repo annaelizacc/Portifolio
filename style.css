@@ -1074,9 +1074,13 @@ input:checked+.slider:before {
     }
 
     #pag3 {
-        height: 130vh;
+        height: 150vh;
         display: flex;
         flex-direction: column;
+    }
+
+    #quad4{
+        height: 18vh;
     }
 
     #quad3 {
@@ -1101,7 +1105,6 @@ input:checked+.slider:before {
         height: auto;
         padding-bottom: 20px;
     }
-
 
     .title3 {
         font-size: 50px;
@@ -1283,4 +1286,3 @@ form input {
     font-size: 15px;
     transition: all 0.5s;
 }
-

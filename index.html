@@ -6,49 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Eliza - Dev</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="parte1">
-        <div>
-            <img src="imagens/botao-de-menu.png" alt="" height="45%" id="tracinho">
-            <input type="checkbox" id="menu">
+    <header class="header">
+        <!-- Botão menu mobile -->
+        <button class="hamburger" id="hamburger">☰</button>
 
-
-            <nav id="menu-content">
-                <ul class="menu-ul">
-                    <li><a href="#pag1">Home</a></li>
-                    <li><a href="#pag3">Habilidades</a></li>
-                    <li><a href="#pag2">Sobre Mim</a></li>
-                    <li><a href="#pag4">Projetos</a></li>
-                    <li><a href="#pag5">Contato</a></li>
-                </ul>
-            </nav>
+        <!-- TEXTO CENTRAL -->
+        <div class="logo">
+            Anna Eliza
         </div>
 
-        <a href="#pag2">
-            <h2 class="txt1">Sobre </h2>
-        </a>
-        <a href="#pag3">
-            <h2 class="txt1">Habilidades</h2>
-        </a>
-        <a href="#pag4">
-            <h2 class="txt1"> Projeto</h2>
-        </a>
-        <a href="#pag5">
-            <h2 class="txt1"> Contato</h2>
-        </a>
+        <!-- Menu desktop (ESQUERDA) -->
+        <nav class="menu-desktop">
+            <a href="#pag2">Sobre</a>
+            <a href="#pag3">Habilidades</a>
+            <a href="#pag4">Projetos</a>
+            <a href="#pag5">Contato</a>
+        </nav>
 
-
-        <label class="switch"> <!-- somente como se fosse uma div e colocasse uma classe para  -->
-            <input type="checkbox" id="color_mode"> <!-- so deu o tipo  -->
-            <span class="slider round "></span> <!-- Controles deslizantes arredondados  -->
+        <!-- Dark mode (DIREITA) -->
+        <label class="switch">
+            <input type="checkbox" id="color_mode">
+            <span class="slider round"></span>
         </label>
     </header>
+
+
+
+
+    <!-- Menu mobile (overlay) -->
+    <nav class="menu-mobile" id="menu-mobile">
+        <button class="close-menu" id="close-menu">×</button>
+
+        <a href="#pag1">Home</a>
+        <a href="#pag2">Sobre</a>
+        <a href="#pag3">Habilidades</a>
+        <a href="#pag4">Projetos</a>
+        <a href="#pag5">Contato</a>
+    </nav>
+
+
+
     <div id="pag1">
 
         <div id="sla">
@@ -71,44 +75,46 @@
                     <div class="linha"></div>
                 </div>
 
-                <div>
+                <div id="icons">
                     <button onclick="abrirModal()" id="button">Currículo</button>
                     <dialog id="modal">
                         <img src="imagens/Curriculo2.png" alt="" height="auto">
-                        <button id="dialog-baixar"><a href="imagens/Currículo - Anna Eliza.pdf"  id="CV" download="Currículo - Anna Eliza">Baixar</a></button>
+                        <button id="dialog-baixar"><a href="imagens/Curriculo-AnnaEliza.pdf"
+                                href="imagens/Curriculo-AnnaEliza.pdf" id="CV"
+                                download="Currículo - Anna Eliza">Baixar</a></button>
                         <button onclick="fechar()" id="dialog-concluir">Concluído</button>
                     </dialog>
+
+
+                </div>
+                <!-- <div>
+                    <div data-mode="blue" id="theme-button" class="theme-dot"></div> 
                 </div>
 
+                <div>
+                    <input type="checkbox" id="tema">
+                </div>
 
-                <!-- <div>
-                    <button id="button" onclick="abrirModal()">Currículo</button>
-                    <dialog id="modal">
-                        <a href="imagens/Currículo - Anna Eliza.pdf" download="Currículo"></a>
-                        <img src="imagens/Currículo - Anna Eliza.pdf" alt="">
-                        <button id="dialog-baixar">Baixar</button>
-                        <button onclick="fechar()" id="dialog-concluir">Concluído</button>
+                <label class="switch">
+            <input type="checkbox" id="color_mode">
+            <span class="slider round"></span> -->
+        </label>
 
-                        <a href="imagens/Currículo - Anna Eliza.pdf" id="CV" download="Currículo - Anna Eliza">Baixar</a>
-                    </dialog>
-                </div> -->
 
+
+                <div id="partdireita">
+                    <a href="https://github.com/annaelizacc" class="git"> <img src="imagens/logotipo.png" alt=""
+                            height="100vh" width="100vh"> </a> <br>
+                    <a
+                        href="https://www.linkedin.com/in/anna-eliza-cardoso-campos-030231363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                        <img src="imagens/social.png" alt="" height="100vh" width="100vh"> </a> <br>
+
+                    <a href="mailto:annaelizacardosocampos@gmail.com"> <img src="imagens/o-email.png" alt=""
+                            height="100vh" width="100vh"> </a>
+
+                </div>
             </div>
-            <div id="partdireita">
-                <a href="https://github.com/annaelizacc" class="git"> <img src="imagens/logotipo.png" alt=""
-                        height="100vh" width="100vh"> </a> <br>
-                <a
-                    href="https://www.linkedin.com/in/anna-eliza-cardoso-campos-030231363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                    <img src="imagens/social.png" alt="" height="100vh" width="100vh"> </a> <br>
-
-                <a href="mailto:annaelizacardosocampos@gmail.com"> <img src="imagens/o-email.png" alt="" height="100vh"
-                        width="100vh"> </a>
-
-            </div>
-
-
         </div>
-    </div>
 
 
 
@@ -212,12 +218,16 @@
                 </div>
 
                 <div class="text">
-                    <p class="h3"> Belara - Replica </p>
-                    <p class="p"> Descrição do projeto </p>
+                    <p class="h3"> CRUD </p>
+                    <p class="p">   C# <br>
+                        O objetivo é construir um sistema que exemplifique essas quatro 
+                        operações básicas, usando linguagens como C# para demonstrar como um CRUD 
+                        funciona na prática em um contexto real de aplicação (como um controle de 
+                        clientes ou de vendas) </p>
 
                     <div class="icon-box">
                         <img src="/imagens/github-preto.png" alt="">
-                        <a href="https://annaelizacc.github.io/Copia/" class="span" target="_blank">Link do
+                        <a href="https://github.com/annaelizacc/CRUD" class="span" target="_blank">Link do
                             repositorio</a>
                         </p>
                     </div>
@@ -233,7 +243,11 @@
 
                 <div class="text">
                     <p class="h3">Tullen - Replica </p>
-                    <p class="p"> 6 Video - 40 min </p>
+                    <p class="p">HTML e CSS <br>
+                    Site refeito para aprendizado de hover, position e
+                        alguns usos de display. Para promover melhor experiencia para 
+                        aprender e ter melhor uso, entendendo como funciona funciona 
+                        cada campo e como poderia ser melhor utilizado na pratica.</p>
 
                     <div class="icon-box">
                         <img src="/imagens/github-preto.png" alt="">
@@ -250,12 +264,15 @@
                 </div>
 
                 <div class="text">
-                    <p class="h3"> BITMAP - Replica </p>
-                    <p class="p"> 6 Video - 40 min </p>
+                    <p class="h3"> Banco de Dados </p>
+                    <p class="p"> Este projeto ajuda a entender como dados reais são organizados, 
+                        manipulados e consultados usando SQL e modelos de banco de dados
+                         que é uma habilidade fundamental para construir sistemas que realmente 
+                         funcionem com informação.</p>
 
                     <div class="icon-box">
                         <img src="/imagens/github-preto.png" alt="">
-                        <a href="https://annaelizacc.github.io/BITMAP-COPIA" class="span" target="_blank">Link do
+                        <a href="https://github.com/annaelizacc/BancoDados" class="span" target="_blank">Link do
                             repositorio</a>
                     </div>
                 </div>
@@ -263,7 +280,7 @@
 
             <!--  -->
 
-            
+
             <div class="card">
                 <div class="img">
                     <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
@@ -271,7 +288,10 @@
 
                 <div class="text">
                     <p class="h3"> Livraria Espanha/ E-commerce </p>
-                    <p class="p"> Descrição do projeto </p>
+                    <p class="p"> Site criado para ter noção de criação de E-commerce 
+                        de produtos, o escolhido foi uma livraria, no site esta sendo 
+                        utilizado diplay flex, display inline, responsividade e mais 
+                        algumas coisas itens necessários em um site. </p>
 
                     <div class="icon-box">
                         <img src="/imagens/github-preto.png" alt="">
@@ -285,7 +305,7 @@
             <!-- -->
             <!--  -->
 
-            
+
             <div class="card">
                 <div class="img">
                     <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
@@ -293,7 +313,9 @@
 
                 <div class="text">
                     <p class="h3">Tabela </p>
-                    <p class="p"> Descrição do projeto </p>
+                    <p class="p">Tabela feita com TD e TR para ter o melhor entendimento
+                        de sites mais antigos e também sobre posicionamento dos itens 
+                        dentro de um código.</p>
 
                     <div class="icon-box">
                         <img src="/imagens/github-preto.png" alt="">
@@ -305,7 +327,7 @@
             </div>
 
             <!-- -->
-            
+
             <div class="card">
                 <div class="img">
                     <img src="imagens/ImagemF.png" alt="" height="100%" width="100%">
@@ -313,7 +335,9 @@
 
                 <div class="text">
                     <p class="h3"> Tabela Periódica </p>
-                    <p class="p">É uma réplica da tabela periódica em formato de site. </p>
+                    <p class="p">É uma réplica da tabela periódica em formato de site,
+                         trazendo o aprendizado do uso de tabelas no trabalho e podendo 
+                         entender sites mais antigos com mais facilidade.</p>
 
                     <div class="icon-box">
                         <img src="/imagens/github-preto.png" alt="">
@@ -335,10 +359,9 @@
     <!--  -->
 
 
-
     <div id="pag5" class="reveal">
         <h2 class="title3">Contato</h2>
-        <div id="quadradao" id="contato">
+        <div id="quadradao">
             <div class="contato">
                 <button class="email">
                     <a href=""> <img src="imagens/e-mail.png" alt="" height="30vh" width="30vw"></a>
@@ -356,7 +379,7 @@
                     <p>linkedin.com/in/annaelizacc</p>
                 </button>
 
-                 <button class="email">
+                <button class="email">
                     <a>
                         <img src="imagens/telefone.png" alt="" height="30vh" width="30vw"> </a>
                     <p>(31) 98244-0401</p>
@@ -392,7 +415,7 @@
                     <img src="imagens/o-email.png" alt="Email">
                 </a>
             </div>
-            <p class="copy">© 2025 — Desenvolvido por Anna Eliza ✨</p>
+            <p class="copy">© 2025 — Desenvolvido por Anna Eliza</p>
         </div>
     </footer>
 
@@ -400,7 +423,7 @@
     </div>
     </footer>
 
-
+ <script src="index.js"></script>
 </body>
 
 </html>

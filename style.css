@@ -288,7 +288,7 @@ input:checked + .slider::before {
 
 #quad2 {
     background-color: #EB8F1E;
-    height: 63vh;
+    height: 66vh;
     width: 80%;
     padding: 10%;
     border-radius: 20px;
@@ -435,7 +435,7 @@ input:checked + .slider::before {
 }
 
 #pag4 {
-    height: 100vh;
+    height: 115vh;
     background-color: #a9d1f3;
     padding: 0 auto;
 
@@ -1254,7 +1254,7 @@ input:checked+.slider:before {
     }
 
     #pag3 {
-        height: 130vh;
+        height: 180vh;
         display: flex;
         flex-direction: column;
     }
@@ -1487,3 +1487,4 @@ form input {
 
 
  
+
